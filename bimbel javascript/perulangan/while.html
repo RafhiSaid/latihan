@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan While</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="for.html">for</a></li>
+                <li><a href="for_of.html">for-of</a></li>
+                <li><a href="for_in.html">for-in</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="do_while.html">do while</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script type="text/javascript">
+        document.write(`<h2>Perulangan While</h2>`);
+        let n = 1;
+        while (n <= 5) {
+            document.write(`${n}. Hello World`);
+            document.write(`<br>`);
+            n++
+        }
+
+        let lagi = true;
+        while (lagi) {
+            const jawaban = window.prompt('Tahhun Berapa Indonesia Merdeka?');
+            if (jawaban === '1945'){
+                window.alert('Benarloh, kok hebat');
+            } else {
+                window.alert('Salah Oyy, Belajar lagi ya dek');
+            }
+            lagi = window.confirm('mau ulang lagi?');
+        }
+
+    </script>
+</body>
+
+</html>

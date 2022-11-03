@@ -1,0 +1,101 @@
+*,html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    border-bottom:3px solid lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 40px 1px black;
+}
+
+header .logo {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .search {
+    width: 700px;
+}
+
+header .search input {
+    padding: 8px 8px;
+    width: 90%;
+}
+
+header .search button {
+    padding: 8px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .cart button {
+    padding: 8px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .button button {
+    padding: 8px 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+header .button #btn-daftar {
+    color: white;
+    background-color: green;
+}
+
+section.banner {
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section.banner img {
+    width: 70%;
+    border-radius: 20px;
+}
+
+section.produk {
+    /* border: 1px solid black; */
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 20px; */
+    justify-items: center;
+}
+
+section.produk .item {
+    padding: 15%;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 120px;
+}
+
+section.produk .item button{
+    padding: 8px;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 50%;
+}

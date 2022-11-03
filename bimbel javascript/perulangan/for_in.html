@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan For - in</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="for.html">for</a></li>
+                <li><a href="for_of.html">for of</a></li>
+                <li><a href="for_in.html">for in</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="do_while.html">do while</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script type="text/javascript">
+        document.write(`<h2>Perulangan For-in - Object</h2>`);
+        const mahasiswa = {
+            nama: 'Rafhi Said',
+            umur: '21',
+            jurusan: 'Sistem Informasi'};
+        for (const key in mahasiswa) {
+            document.write(`${key} = ${mahasiswa[key]}`);
+            document.write(`<br>`);
+        }
+    </script>
+</body>
+
+</html>

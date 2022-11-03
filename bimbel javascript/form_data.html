@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="judul">Pertemuan JavaScript </h1>
+            <ul class="navbar">
+                <li class="atap"><a class="active" href="index.html">HOME</a></li>
+                <li class="atap"><a href="operator.html">OPERATOR</a></li>
+                <li class="atap"><a href="percabangan.html">PERCABANGAN</a></li>
+                <li class="atap"><a href="array.html">ARRAY</a></li>
+                <li class="atap"><a href="form_data.html">FORM</a></li>
+                <li class="atap"><a href="perulangan.html">PERULANGAN</a></li>
+                <li class="atap"><a href="JS-CRUD/index.html">JS-CRUD</a></li>
+                <li class="atap"><a href="E-Commerce/index.html">E-COMMERCE</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="warp">
+                <div>
+                    <form id="form">
+                        <label for="name">Name :</label><br>
+                        <input type="text" id="name" name="Name"><br>
+                        <label for="date">Date :</label><br>
+                        <input type="text" id="role" name="Role"><br>
+                        <label for="lname">Amount :</label><br>
+                        <input type="text" id="amount" name="Amount"><br><br>
+                        <input class="btn" id="btn" type="button" value="Print all value">
+                    </form>
+                </div>
+            </div>
+            <div class="output">
+                <pre id="output"></pre>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function (event) {
+                const form = document.getElementById('form');
+                const output = document.getElementById('output');
+                const data = Object.fromEntries(new FormData(form).entries());
+                output.innerHTML = JSON.stringify(data, undefined, 2);
+            });
+        </script>
+    </div>
+
+    <div class="side-container">
+        <h1 class="judulpus"> Daftar Pertemuan </h1>
+        <ul class="navbar">
+            <li class="atap"><a href="operator.html">OPERATOR</a></li>
+            <li class="atap"><a href="percabangan.html">PERCABANGAN</a></li>
+            <li class="atap"><a href="array.html">ARRAY</a></li>
+            <li class="atap"><a href="form_data.html">FORM</a></li>
+            <li class="atap"><a href="perulangan.html">PERULANGAN</a></li>
+            <ul class="m1">
+                <li class="a2"><a href="perulangan/for.html">FOR</a></li>
+                <li class="a2"><a href="perulangan/for_of.html">FOR OF</a></li>
+                <li class="a2"><a href="perulangan/for_in.html">FOR IN</a></li>
+                <li class="a2"><a href="perulangan/while.html">WHILE</a></li>
+                <li class="a2"><a href="perulangan/do_while.html">DO WHILE</a></li>
+            </ul>
+            <li class="atap"><a href="JS-CRUD/index.html">JS-CRUD</a></li>
+        </ul>
+    </div>
+
+</body>
+
+<style>
+    .warp {
+        position: inherit;
+        top: 20%;
+        padding: 20px;
+    }
+
+    .btn {
+        color: white;
+        background: #514ce1;
+        height: 40px;
+        width: 100px;
+        font-family: 'poppins', sans-serif;
+        bottom: 5px;
+        float: left;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .output {
+        margin-top: -150px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #output {
+        width: 200px;
+        height: 100px;
+        padding: 50px;
+        border: 1px solid black;
+        min-height: 200px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        box-shadow: 5px 10px 22px 5px black;
+    }
+</style>
+
+</html>

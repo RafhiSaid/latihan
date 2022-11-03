@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="judul">Pertemuan JavaScript </h1>
+            <ul class="navbar">
+                <li class="atap"><a class="active" href="index.html">HOME</a></li>
+                <li class="atap"><a href="operator.html">OPERATOR</a></li>
+                <li class="atap"><a href="percabangan.html">PERCABANGAN</a></li>
+                <li class="atap"><a href="array.html">ARRAY</a></li>
+                <li class="atap"><a href="form_data.html">FORM</a></li>
+                <li class="atap"><a href="perulangan.html">PERULANGAN</a></li>
+                <li class="atap"><a href="JS-CRUD/index.html">JS-CRUD</a></li>
+                <li class="atap"><a href="E-Commerce/index.html">E-COMMERCE</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <Script class="array">
+                const buah = ['pisang', 'apel', 'mangga'];
+
+                //menampilkan array index
+                console.log(buah[0]);
+                console.log(buah[1]);
+                console.log(buah[2]);
+
+                //menampilakn array dengan perulangan
+                buah.forEach((item) => console.log(item));
+            </Script>
+            <script>
+                const space = ['   '];
+
+                console.log(space[0]);
+            </script>
+            <Script>
+                const array = ['romi',
+                    ['meja', 'kursi', 3000],
+                    'mobil',
+                    'motor'];
+
+                //menampilkan array index
+                console.log(array[0]); //romi
+                console.log("-" + array[1][0]); // meja
+                console.log("-" + array[1][1]); // kursi
+                console.log("-" + array[1][2]); // 3000
+                console.log(array[2]); // mobil
+                console.log(array[3]); // motor
+            </Script>
+            <script>
+                const loop = ['array loop']
+
+                space.forEach((item) => console.log(item));
+                console.log(loop[0]);
+            </script>
+            <h2>Daftar Mahasiswa</h2>
+            <br>
+            <div style="margin-left: 3%;" id="hasil"> </div>
+            <script>
+                const mhs = ['andi', 'budi', 'sambo', 'daniel'];
+                // mhs.push('sutet');
+                // mhs.pop(); //delete element diakhir
+                // mhs.shift(); //delete element diawal
+                console.log(mhs.length); //3
+                let text = '<ul>';
+                for (var i = 0; i < mhs.length; i++) {
+                    // text = '<li>'+console.log(mhs[i])+'</li>';
+                    mhs[2] = 'jeruk sambo' //edit element
+                    mhs[4] = 'putri sambo' //tambah element
+                    text += '<li>' + mhs[i] + '<li>'
+                }
+                text += '</ul>'
+                // document.getElementById('hasil').innerHTML = mhs;
+                document.getElementById('hasil').innerHTML = text;
+            </script>
+
+        </div>
+    </div>
+
+    <div class="side-container">
+        <h1 class="judulpus"> Daftar Pertemuan </h1>
+        <ul class="navbar">
+            <li class="atap"><a href="operator.html">OPERATOR</a></li>
+            <li class="atap"><a href="percabangan.html">PERCABANGAN</a></li>
+            <li class="atap"><a href="array.html">ARRAY</a></li>
+            <li class="atap"><a href="form_data.html">FORM</a></li>
+            <li class="atap"><a href="perulangan.html">PERULANGAN</a></li>
+            <ul class="m1">
+                <li class="a2"><a href="perulangan/for.html">FOR</a></li>
+                <li class="a2"><a href="perulangan/for_of.html">FOR OF</a></li>
+                <li class="a2"><a href="perulangan/for_in.html">FOR IN</a></li>
+                <li class="a2"><a href="perulangan/while.html">WHILE</a></li>
+                <li class="a2"><a href="perulangan/do_while.html">DO WHILE</a></li>
+            </ul>
+            <li class="atap"><a href="JS-CRUD/index.html">JS-CRUD</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

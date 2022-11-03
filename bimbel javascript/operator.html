@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="judul">Pertemuan JavaScript </h1>
+            <ul class="navbar">
+                <li class="atap"><a class="active" href="index.html">HOME</a></li>
+                <li class="atap"><a href="operator.html">OPERATOR</a></li>
+                <li class="atap"><a href="percabangan.html">PERCABANGAN</a></li>
+                <li class="atap"><a href="array.html">ARRAY</a></li>
+                <li class="atap"><a href="form_data.html">FORM</a></li>
+                <li class="atap"><a href="perulangan.html">PERULANGAN</a></li>
+                <li class="atap"><a href="JS-CRUD/index.html">JS-CRUD</a></li>
+                <li class="atap"><a href="E-Commerce/index.html">E-COMMERCE</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="aritmatika">
+                <h3>Operator Aritmatika</h3> <br>
+                <Script>
+                    var a = 15;
+                    var b = 4;
+                    var c = 0;
+                    c = a - b; // pengurangan
+                    document.write(a + ' - ' + b + ' = ' + c + '<br/>');
+                    document.write(`${a} - ${b} = ${c} <br/>`);
+                    c = a * b; // perkalian
+                    document.write(`${a} * ${b} = ${c} <br/>`);
+                    c = a ** b; // pemangkatan
+                    document.write(`${a} ** ${b} = ${c} <br/>`);
+                    c = a / b; // pembagian
+                    document.write(`${a} / ${b} = ${c} <br/>`);
+                    c = a % b; // modulus
+                    document.write(`${a} % ${b} = ${c} <br/>`);
+                </Script>
+            </div>
+            <div class="aritmatika">
+                <h3>Operator Penugasan</h3> <br>
+                <Script>
+                    var score = 100
+                    document.write("score = " + score + "<br/>");
+                    score += 5; // pengisian dan penjumlahan dengan 5
+                    document.write("score = " + score + "<br/>");
+                    score -= 2; // pengisian dan pengurangan dengan 2
+                    document.write("score = " + score + "<br/>");
+                    score *= 2; // pengisian dan perkalian dengan 2
+                    document.write("score = " + score + "<br/>");
+                    score /= 4; // pengisian dan pembagian dengan 4
+                    document.write("score = " + score + "<br/>");
+                    score **= 2; // pengisian dan pemangkatan dengan 2
+                    document.write("score = " + score + "<br/>");
+                    score %= 3; // pengisian dan modulus dengan 3
+                    document.write("score = " + score + "<br/>");
+                </Script>
+            </div>
+            <div class="aritmatika">
+                <h3>Operator Pembanding</h3> <br>
+                <script>
+                    var a = 20;
+                    var b = 19;
+                    var hasil = a == b; //sama dengan
+                    document.write(`${a} == ${b} = ${hasil}<br/>`);
+                    var hasil = a > b; //lebih besar
+                    document.write(`${a} > ${b} = ${hasil}<br/>`);
+                    var hasil = a >= b; //lebih besar samadengan
+                    document.write(`${a} >= ${b} = ${hasil}<br/>`);
+                    var hasil = a < b; //lebih kecil
+                    document.write(`${a} < ${b} = ${hasil}<br/>`);
+                    var hasil = a <= b; //lebih kecil samadengan
+                    document.write(`${a} <= ${b} = ${hasil}<br/>`);
+                    var hasil = a != b; //tidak samadengan
+                    document.write(`${a} != ${b} = ${hasil}<br/>`);
+                </script>
+            </div>
+            <div class="aritmatika">
+                <h3>Operator Logika</h3> <br>
+                <script>
+                    var a = 20;
+                    var b = 19;
+                    var benar = a > b;
+                    var salah = a < b;
+                    var hasil = benar && salah; // operator && (and)
+                    document.write(`${benar} && ${salah} = ${hasil}<br/>`);
+                    var hasil = benar || salah; // operator || (or)
+                    document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+                    var hasil = !benar; // operator ! (not)
+                    document.write(`!${benar} = ${hasil}<br/>`);
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="side-container">
+        <h1 class="judulpus"> Daftar Pertemuan </h1>
+        <ul class="navbar">
+            <li class="atap"><a href="operator.html">OPERATOR</a></li>
+            <li class="atap"><a href="percabangan.html">PERCABANGAN</a></li>
+            <li class="atap"><a href="array.html">ARRAY</a></li>
+            <li class="atap"><a href="form_data.html">FORM</a></li>
+            <li class="atap"><a href="perulangan.html">PERULANGAN</a></li>
+            <ul class="m1">
+                <li class="a2"><a href="perulangan/for.html">FOR</a></li>
+                <li class="a2"><a href="perulangan/for_of.html">FOR OF</a></li>
+                <li class="a2"><a href="perulangan/for_in.html">FOR IN</a></li>
+                <li class="a2"><a href="perulangan/while.html">WHILE</a></li>
+                <li class="a2"><a href="perulangan/do_while.html">DO WHILE</a></li>
+            </ul>
+            <li class="atap"><a href="JS-CRUD/index.html">JS-CRUD</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan For</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="for.html">for</a></li>
+                <li><a href="for_of.html">for-of</a></li>
+                <li><a href="for_in.html">for-in</a></li>
+                <li><a href="while.html">while</a></li>
+                <li><a href="do_while.html">do while</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script type="text/javascript">
+        document.write(`<h2>Perulangan For</h2>`);
+        for (let i = 1; i <= 5; i++) {
+            console.log(`${i}. Hello World`);
+            document.write(`${i}. Hello World`);
+            document.write(`<br>`);
+            // var hasil = `${i}. Hello World;`
+            // document.getElementById('hasil').innerHTML = hasil;
+        }
+
+        document.write(`<h2>Perulangan For - Array</h2>`);
+        const buah = ['apel', 'mangga', 'jeruk', 'pisang'];
+        for (let i = 0; i < buah.length; i++) {
+            document.write(buah[i]);
+            document.write(`<br>`);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+*,html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family:  Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-image: url(gambar/background.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+
+.container {
+  width: 80%;
+  /* background-color: aqua; */
+  margin-left: 20px;
+}
+
+.header {
+  border-bottom: 2px double;
+}
+
+.header .judul {
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 32px;
+}
+
+.header ul.navbar{
+  list-style-type: none;
+  padding: 20px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.header ul li {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 3px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header ul li:hover {
+  background-color: #514ce1;
+}
+
+.header ul li a:hover {
+  color: white;
+}
+
+.content .jam {
+  width: fit-content;
+  padding: 3px;
+  float: right;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #514ce1;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.content .tittle {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content .catat {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 5px;
+}
+
+
+.hitung {
+  display: flex;
+  justify-content: center;
+}
+
+.form1 {
+  border: 1px solid navy;
+  width: 239px;
+  height: 75px;
+  border-radius: 5px;
+  margin: auto;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.speak_btn {
+  color: white;
+  background: #514ce1;
+  height: 40px;
+  width: 250px;
+  font-family: 'poppins', sans-serif;
+  bottom: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.side-container {
+  width: 20%;
+  float: right;
+  right: 2px;
+  background-color: #514ce1;
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.side-container .judulpus {
+  font-size: 28px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+
+.side-container ul {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.side-container ul li {
+  list-style-type: decimal;
+  color: white;
+  padding: 5px;
+}
+
+.side-container ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.side-container .navbar .m1 .a2 {
+  list-style-type: circle;
+  color: white;
+  padding: 5px;
+}
+
+.aritmatika {
+  width: 250px;
+  height: 200px;
+  float: left;
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.content .m2 .a3 {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  color: white;
+  border: 1px solid #514ce1;
+  border-radius: 10px;
+  background-color: #514ce1;
+  text-align: center;
+  line-height: 200px;
+  list-style-type: none;
+}
+
+.content .m2 .a3 a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,132 @@
+*,html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family:  Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-image: url(../gambar/background.jpg);
+    background-size: 100%;
+    background-position: center;
+  }
+  
+  
+  .container {
+    width: 80%;
+    /* background-color: aqua; */
+    margin-left: 20px;
+  }
+  
+  .header {
+    border-bottom: 2px double;
+  }
+  
+  .header .judul {
+    padding: 20px;
+    padding-bottom: 0;
+    font-size: 32px;
+  }
+  
+  .header ul.navbar{
+    list-style-type: none;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  
+  .header ul li {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 3px;
+  }
+  
+  .header ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .header ul li:hover {
+    background-color: #514ce1;
+  }
+  
+  .header ul li a:hover {
+    color: white;
+  }
+  
+  /* .matamu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .matamu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabel {
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    border: 1px solid #514ce1;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 2px black;
+  }
+
+  table thead tr th {
+    border: 1px solid black;
+  }
+
+  tbody tr td{
+    border: 1px solid black;
+  }
+  
+  .side-container {
+    width: 20%;
+    float: right;
+    right: 2px;
+    background-color: #514ce1;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .side-container .judulpus {
+    font-size: 28px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+  }
+  
+  .side-container ul {
+    padding: 20px;
+    padding-top: 0;
+  }
+  
+  .side-container ul li {
+    list-style-type: decimal;
+    color: white;
+    padding: 5px;
+  }
+  
+  .side-container ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .side-container .navbar .m1 .a2 {
+    list-style-type: circle;
+    color: white;
+    padding: 5px;
+  }
