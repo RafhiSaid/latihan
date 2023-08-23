@@ -1,2 +1,2 @@
-# latihan
-coba coba
+# materi javascript
+isi materi dasar
